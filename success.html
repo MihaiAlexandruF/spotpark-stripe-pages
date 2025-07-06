@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Plată reușită</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top-up reușit</title>
+    <script>
+      window.location.href = "spotpark://stripe-redirect";
+    </script>
   </head>
-  <body style="text-align: center; font-family: sans-serif; padding-top: 100px;">
-    <h1>✅ Plata a fost efectuată</h1>
-    <p>Îți mulțumim pentru utilizare!</p>
-    <a href="spotpark://success">
-      <button style="padding: 12px 24px; font-size: 16px; margin-top: 20px;">Înapoi în aplicație</button>
-    </a>
+  <body>
+    <h1>Plata a fost realizată cu succes!</h1>
+    <a href="spotpark://stripe-redirect">Revenire în aplicație</a>
   </body>
 </html>
