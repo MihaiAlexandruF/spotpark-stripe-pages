@@ -2,12 +2,18 @@
 <html>
   <head>
     <title>Top-up reușit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
-      window.location.href = "spotpark://stripe-redirect";
+      setTimeout(() => {
+        window.location.href = "spotpark://stripe-redirect/success";
+      }, 500); // dă timp browserului să proceseze redirecția
     </script>
   </head>
-  <body>
-    <h1>Plata a fost realizată cu succes!</h1>
-    <a href="spotpark://stripe-redirect">Revenire în aplicație</a>
+  <body style="text-align: center; font-family: sans-serif; padding-top: 100px;">
+    <h1>✅ Plata a fost realizată cu succes!</h1>
+    <p>În câteva secunde vei fi redirecționat către aplicație.</p>
+    <a href="spotpark://stripe-redirect/success">
+      <button style="padding: 12px 24px; font-size: 16px; margin-top: 20px;">Revenire în aplicație</button>
+    </a>
   </body>
 </html>
